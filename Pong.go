@@ -36,6 +36,7 @@ func (ball *ball) update(leftPaddle *paddle, rightPaddle *paddle) {
 	ball.x += ball.xv
 	ball.y += ball.yv
 	//handle collision
+	//handle something
 	if int(ball.y)-ball.radius < 0 || int(ball.y)+ball.radius > winHeight {
 		ball.yv = -ball.yv
 	}
